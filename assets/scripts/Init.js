@@ -8,9 +8,8 @@
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
 //import * as pomeloModule from "../pomelo/build.js" 
-var LoadPomelo = require("../pomelo/build.js");
-LoadPomelo();
-var pomelo = window.pomelo;
+var pomelo = require('loadpomelo')
+
 cc.Class({
     extends: cc.Component,
 

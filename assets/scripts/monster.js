@@ -7,9 +7,8 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
-var LoadPomelo = require("../pomelo/build.js");
+var pomelo = require('loadpomelo')
 
-var pomelo = window.pomelo;
 cc.Class({
     extends: cc.Component,
 
@@ -50,7 +49,6 @@ cc.Class({
                     //TODO 向服务器发送位移消息
                     
                     console.log("reday to move\n");
-                    LoadPomelo();
                 },
             );
         // }
